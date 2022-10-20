@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <title>HP Application Form Page 1</title>
+
+    <!-- css reset style  -->
+    <style>
+        html,
+        body,
+        p,
+        ol,
+        ul,
+        li,
+        dl,
+        dt,
+        dd,
+        blockquote,
+        figure,
+        fieldset,
+        legend,
+        textarea,
+        pre,
+        iframe,
+        hr,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+            padding: 0
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: 100%;
+            font-weight: normal
+        }
+
+        ul {
+            list-style: none
+        }
+
+        button,
+        input,
+        select {
+            margin: 0
+        }
+
+        html {
+            box-sizing: border-box
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: inherit
+        }
+
+        img,
+        video {
+            height: auto;
+            max-width: 100%
+        }
+
+        iframe {
+            border: 0
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0
+        }
+
+        td,
+        th {
+            padding: 0
+        }
+    </style>
+
+    <!-- page style  -->
+    <style>
+        html {
+            background-color: #F5F5F5;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            display: flex;
+            flex-direction: column;
+            color: #292B33;
+            width: 100%;
+            padding: 30px;
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            border: 2px solid #000000;
+            padding: 20px 10px;
+        }
+
+        header section:last-child {
+            margin-left: 10px;
+            font-weight: bold;
+            line-height: 26px;
+        }
+
+        header section:last-child>div:first-child {
+            font-size: 16px;
+        }
+
+        main {
+            flex-grow: 1;
+        }
+
+        .description {
+            margin: 5px 0px;
+            text-align: right;
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+            border: 2px solid #000000;
+            table-layout: fixed;
+        }
+
+        td {
+            border: 1px solid #000000;
+            padding: 8px;
+        }
+
+        .table-header-info {
+            background: #DDEBF8;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section>
+            <svg width="75" height="30" viewBox="0 0 50 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_3_76)">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M36.824 5.37255L41.951 8.25306C42.1709 7.69595 42.307 7.12457 42.3173 6.55557L37.9939 4.12653L36.824 5.37255Z"
+                        fill="#0075FF" />
+                    <mask id="mask0_3_76" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="33" y="0" width="7"
+                        height="8">
+                        <path d="M33.044 0.150116H39.1888V7.14212H33.044V0.150116Z" fill="white" />
+                    </mask>
+                    <g mask="url(#mask0_3_76)">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M37.5225 0.150055C36.5679 0.821187 33.044 3.47698 33.044 6.0999C33.044 6.4476 33.1036 6.79654 33.2091 7.14209L39.1888 1.47941C38.4938 0.85376 37.8535 0.382677 37.5225 0.150055Z"
+                            fill="#0075FF" />
+                    </g>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M38.1973 3.28793L41.7679 5.15817C41.4961 3.93413 40.6002 2.74625 39.6902 1.80536L38.1973 3.28793Z"
+                        fill="#0075FF" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.55803 4.2735C9.25664 4.2735 10.726 4.75475 11.7951 5.37625V8.5843C10.6307 7.74211 9.12297 7.14072 7.61513 7.14072C4.82867 7.14072 3.03466 9.2058 3.03466 11.7923C3.03466 14.3184 4.75242 16.4438 7.59599 16.4438C8.22574 16.4438 8.83681 16.3235 9.29477 16.1231V13.9375H6.88985V11.291H12.234V18.0278C10.9934 18.7495 9.25664 19.2308 7.53889 19.2308C3.11091 19.2308 0 16.0829 0 11.8123C0 7.5216 3.14919 4.2735 7.55803 4.2735Z"
+                        fill="#0075FF" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M17.0278 14.9458C17.3764 16.2885 18.5243 16.9007 19.9593 16.9007C21.0868 16.9007 22.317 16.5255 23.3826 15.8345V18.3423C22.3989 18.9346 20.8819 19.2308 19.5493 19.2308C16.2284 19.2308 13.8298 17.2364 13.8298 14.1954C13.8298 11.0954 16.3308 9.08121 19.1188 9.08121C21.5994 9.08121 23.9362 10.6609 23.9362 13.919C23.9362 14.2547 23.9158 14.689 23.8748 14.9458H17.0278ZM17.0072 13.0501H21.0663C20.8819 12.0037 20.0822 11.3718 19.0779 11.3718C18.1142 11.3718 17.274 11.9444 17.0072 13.0501Z"
+                        fill="#0075FF" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M43.0915 14.9458C43.44 16.2885 44.5881 16.9007 46.0231 16.9007C47.1505 16.9007 48.3806 16.5255 49.4465 15.8345V18.3423C48.4624 18.9346 46.9456 19.2308 45.6131 19.2308C42.2921 19.2308 39.8936 17.2364 39.8936 14.1954C39.8936 11.0954 42.3946 9.08121 45.1827 9.08121C47.6633 9.08121 50 10.6609 50 13.919C50 14.2547 49.9794 14.689 49.9385 14.9458H43.0915ZM43.0712 13.0501H47.13C46.9456 12.0037 46.1461 11.3718 45.1418 11.3718C44.1781 11.3718 43.3377 11.9444 43.0712 13.0501Z"
+                        fill="#0075FF" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M37.6605 11.7307C37.1163 11.7307 36.6072 11.5906 36.1702 11.3472V19.2308H39.3617V11.218C38.8812 11.5404 38.2944 11.7307 37.6605 11.7307Z"
+                        fill="#0075FF" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M33.5694 10.5239C33.3276 10.0905 32.9862 9.76094 32.6185 9.52976C32.3834 9.38481 32.1258 9.27276 31.8508 9.19691V9.19279C31.7766 9.17305 31.7032 9.15676 31.6317 9.14459C31.032 9.04274 30.528 9.04652 29.8097 9.28378C29.2358 9.53075 28.7186 9.9128 28.3425 10.2358C28.2763 10.293 28.1285 10.4469 28.0295 10.5514C27.8628 10.7532 27.5125 11.1277 27.1266 11.2414C26.217 11.567 25.5319 11.146 25.5319 11.146V11.365V19.2308H28.2495V12.5508C28.7323 12.1271 29.3938 11.7235 30.0912 11.7235C30.4665 11.7235 30.7884 11.8446 31.0209 12.1472C31.2355 12.4299 31.3248 12.793 31.3248 13.5397V19.2308H34.0426V13.0352C34.0426 11.9004 33.8965 11.1203 33.5694 10.5239ZM26.6303 11.139C26.5755 11.1395 26.5242 11.1383 26.4753 11.1357H26.7162C26.6876 11.1373 26.6589 11.1387 26.6303 11.139Z"
+                        fill="#0075FF" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_3_76">
+                        <rect width="50" height="19.2308" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </section>
+
+        <section>
+            <div>Genie Financing Made Easy</div>
+            <div>GFS TECHNOLOGY SDN BHD (SSM ID: 201901031329 | Co Reg No.: 1340650-H)</div>
+        </section>
+    </header>
+
+    <main>
+        <div class="description">Page 1 of 2</div>
+
+        <table>
+            <tr>
+                <td colspan="4" class="table-header-info" style="text-align: center;">
+                    HIRE PURCHASE APPLICATION FORM
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" class="table-header-info">
+                    PART A : PARTICULAR OF GOODS
+                </td>
+            </tr>
+            <tr>
+                <td>Dealer Name</td>
+                <td></td>
+                <td>Dealer ID</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Salesman Name</td>
+                <td></td>
+                <td>Salesman HP No.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Registration No.</td>
+                <td>$(Registration Number)</td>
+                <td>Vehicle Year Make</td>
+                <td>$(Year Make)</td>
+            </tr>
+            <tr>
+                <td>Vehicle Make & Model</td>
+                <td>$(Make & Model)</td>
+                <td>C.C.</td>
+                <td></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td colspan="16" class="table-header-info">
+                    PART B : HIRER INFORMATION
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">Name as in NRIC</td>
+                <td colspan="13">$(Name)</td>
+            </tr>
+            <tr>
+                <td colspan="3">NRIC No.</td>
+                <td colspan="5">$(NRIC ID)</td>
+                <td>Age</td>
+                <td colspan="2">$(Age)</td>
+                <td colspan="2">Marital Status</td>
+                <td colspan="3">$(Marital Status)</td>
+            </tr>
+            <tr>
+                <td colspan="8">
+                    Home Address: $(Residential Address,Postal Code, City, State)
+                </td>
+                <td colspan="8">
+                    Mailing Address : $(Postal/Mailing Address,Postal Code, City,State)
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">Home Telephone</td>
+                <td colspan="3">$(Phone Number)</td>
+                <td colspan="2">Handphone No.</td>
+                <td colspan="3">$(Mobile Phone Number)</td>
+                <td colspan="2">Education Level</td>
+                <td colspan="3"></td>
+            </tr>
+            <tr>
+                <td colspan="3">Email</td>
+                <td colspan="13">$(Email Address)</td>
+            </tr>
+            <tr>
+                <td colspan="3">Property Ownership</td>
+                <td colspan="5">Owned / Rented / Family</td>
+                <td colspan="4">Length of Stay</td>
+                <td colspan="4"></td>
+            </tr>
+            <tr>
+                <td colspan="3">Name of Employer</td>
+                <td colspan="5">$(Office Name)</td>
+                <td colspan="4">Length of Employment</td>
+                <td colspan="4"></td>
+            </tr>
+            <tr>
+                <td colspan="8" rowspan="4">Address of Employer $(Office Address)</td>
+            </tr>
+            <tr>
+                <td colspan="4">Occupation/Business</td>
+                <td colspan="4"></td>
+            </tr>
+            <tr>
+                <td colspan="4">Gross Monthly Income</td>
+                <td colspan="4"></td>
+            </tr>
+            <tr>
+                <td colspan="4">Office Tel.</td>
+                <td colspan="4">$(Office Tel Ph)</td>
+            </tr>
+            <tr>
+                <td colspan="4">Name of Personal Reference (1)</td>
+                <td colspan="12">$(Reference 1 Name)</td>
+            </tr>
+            <tr>
+                <td colspan="4">Contact No.</td>
+                <td colspan="4">$(Reference 1 Phone Number)</td>
+                <td colspan="4">Relationship</td>
+                <td colspan="4">$(Reference 1 Relationship)</td>
+            </tr>
+            <tr>
+                <td colspan="4">Name of Personal Reference (2)</td>
+                <td colspan="12">$(Reference 2 Name)</td>
+            </tr>
+            <tr>
+                <td colspan="4">Contact No.</td>
+                <td colspan="4">$(Reference 2 Phone Number)</td>
+                <td colspan="4">Relationship</td>
+                <td colspan="4">$(Reference 2 Relationship)</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td colspan="6" class="table-header-info">
+                    PART C : FINANCING DETAILS
+                </td>
+            </tr>
+            <tr>
+                <td>Selling Price</td>
+                <td>$(OTR Price)</td>
+                <td>Interest Rate</td>
+                <td></td>
+                <td>Instalment Amount</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Loan Amount</td>
+                <td>$(Financing Amount)</td>
+                <td>Tenure (months)</td>
+                <td>$(Tenure)</td>
+                <td>Final Instalment</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Others (if any)</td>
+                <td colspan="5"></td>
+            </tr>
+        </table>
+    </main>
+
+    <footer class="description">GFS/HP ApplicationFormMay2022</footer>
+</body>
+
+</html>
